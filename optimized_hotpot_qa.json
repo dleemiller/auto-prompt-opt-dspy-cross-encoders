@@ -1,0 +1,57 @@
+{
+  "predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "\"Everything Has Changed\" is a song from an album released under which record label ?",
+        "reasoning": "The song \"Everything Has Changed\" is by Taylor Swift featuring Ed Sheeran. It is from the album \"Red\". \"Red\" was released under the record label Big Machine Records.",
+        "answer": "Big Machine Records"
+      },
+      {
+        "augmented": true,
+        "question": "Which of these publications was most recently published, Who Put the Bomp or Self?",
+        "reasoning": "\"Who Put the Bomp\" was published from 1970 to 1979. \"Self\" was first published in 1979. Therefore, Self was published most recently.",
+        "answer": "Self"
+      },
+      {
+        "question": "Which Pakistani cricket umpire who won 3 consecutive ICC umpire of the year awards in 2009, 2010, and 2011 will be in the ICC World Twenty20?",
+        "answer": "Aleem Sarwar Dar",
+        "dspy_uuid": "fe5caca8-f08f-4864-b557-24f95b76f7d7",
+        "dspy_split": "train"
+      },
+      {
+        "question": "Who composed \"Sunflower Slow Drag\" with the King of Ragtime?",
+        "answer": "Scott Hayden",
+        "dspy_uuid": "187f0696-f8e5-46c2-9754-194fb1e365ea",
+        "dspy_split": "train"
+      }
+    ],
+    "signature": {
+      "instructions": "Answer questions with step-by-step reasoning",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "The question to answer"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "The answer to the question"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.12",
+      "dspy": "2.6.27",
+      "cloudpickle": "3.1"
+    }
+  }
+}
